@@ -170,20 +170,8 @@ public class CloudStorage {
             scopes.add(StorageScopes.DEVSTORAGE_FULL_CONTROL);
             Log.i("The token being passed","Should  not be  null"+MySingleton.getMyInstance().getauthtoken());
             GoogleCredential credential = new GoogleCredential().setAccessToken(MySingleton.getMyInstance().getauthtoken());
-           // accessToken the one from gmail
-            /*Credential credential = new GoogleCredential.Builder()
-                    .setTransport(httpTransport)
-                    .setJsonFactory(jsonFactory)
-                    .setServiceAccountId(
-                            ACCOUNT_ID_PROPERTY)
-                    .setServiceAccountPrivateKeyId(
-                            "1072230224167-qku8mj3g3j8id1st1o9o4kg7nqutaf4v.apps.googleusercontent.com")
-                    .setServiceAccountScopes(scopes).build();*/
-                MySingleton.getMyInstance().setSingleCred(credential);
-            storage = new Storage.Builder(httpTransport, jsonFactory,
-                   credential).setApplicationName(APPLICATION_NAME_PROPERTY).build();
-
-
+          MySingleton.getMyInstance().setSingleCred(credential);
+          storage = new Storage.Builder(httpTransport, jsonFactory,credential).setApplicationName(APPLICATION_NAME_PROPERTY).build();
         }
         Log.i("Print value of toString storage","the value of toString"+storage.toString());
         return storage;
