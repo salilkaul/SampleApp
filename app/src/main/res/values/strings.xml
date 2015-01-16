@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IntelliCloudApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="UploadButton_String">Upload Button</string>
+    <string name="CameraButton_String">Camera Button</string>
+    <string name="GalleryButton_String">Gallery Button</string>
+    <string name="DialogTitle">Choose Upload Source</string>
+    <string name="sample_connectivity">Check if playstore present</string>
+    <string name="title_activity_bucket__create">Bucket_Create</string>
+    <string name="title_activity_get_channel_details_task">GetChannelDetailsTask</string>
+    <string name="title_activity_sample_image">sampleImageActivity</string>
+
+</resources>
